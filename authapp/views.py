@@ -1,7 +1,31 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.contrib import auth
 from django.contrib.auth.models import User,Group
+from .utils import have_group
 # Create your views here.
+
+
+def login(request):
+    if request.method == "GET":
+        return render(request,"authapp/login.html")
+    
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
+        
+        if username and password:
+            user = auth.authenticate(username=username,password=password)
+            if user:
+                if have_group(user,"STUDENT"):
+                    auth.login(request,user)
+                    return redirect('dashboard_std')
+                elif have_group(user,"USER"):
+                    auth.login(request,user)
+                    return redirect('dashboard_tch')
+        else:
+            return render(request,"authapp/login.html")
+                  
+    return render(request,"authapp/login.html")
 
 def register_std(request):
     if request.method == "GET":
