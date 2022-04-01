@@ -1,0 +1,523 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RGIT</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+      <form action="#">
+        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
+      </form>
+    </div>
+    
+    <div class="probootstrap-page-wrapper">
+      <!-- Fixed navbar -->
+      
+      <div class="probootstrap-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+              <span><i class="icon-location2"></i>Versova, Andheri, Mumbai 400053</span>
+              <span><i class="icon-phone2"></i>+1-123-456-7890</span>
+              <span><i class="icon-mail"></i>info@mctrgit.ac.in</span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a style="font-size: 25px; position: relative; top: 26px; font-weight: bold;" href="index.html" title="uiCookies:Enlight">MCT's Rajiv Gandhi Institute of Technology</a>
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="teachers.html">Teachers</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Register</a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'register_std'  %}">Register as Student</a></li>
+                  <li><a href="{% url 'register_tch'  %}">Register as Teacher</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="flexslider">
+        <ul class="slides">
+          <li style="background-image: url(/static/img/clg4.jpg)" class="overlay">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="probootstrap-slider-text text-center">
+                    <h1 class="probootstrap-heading probootstrap-animate">Your Bright Future is Our Mission</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li style="background-image: url(/static/img/clg3.jpg)" class="overlay">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="probootstrap-slider-text text-center">
+                    <h1 class="probootstrap-heading probootstrap-animate">Education is Life</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          <li style="background-image: url(/static/img/clg4.jpg)" class="overlay">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="probootstrap-slider-text text-center">
+                    <h1 class="probootstrap-heading probootstrap-animate">Helping Each of Our Students Fulfill the Potential</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="probootstrap-section probootstrap-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+              <h2>Welcome to MCT's Rajiv Gandhi Institute of Technology,Mumbai.</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="probootstrap-flex-block">
+                <div class="probootstrap-text probootstrap-animate">
+                  <h3>About the Institute</h3>
+                  <p>RGIT provides a very enriching and rewarding experience to all students. Routine of students includes an optimal mix of work, play and leisure. Curriculum and pedagogy have been designed in a way to make the teaching-learning process both interesting and challenging. Project based learning, problem based</p>
+                  <p><a href="#" class="btn btn-primary">Learn More</a></p>
+                </div>
+                <div class="probootstrap-image probootstrap-animate" style="background-image: url(img/slider_3.jpg)">
+                  <a style="background-image: url(/static/img/clg4.jpg);" class="btn-video popup-vimeo"><i class="icon-play3"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="probootstrap-section" id="probootstrap-counter">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+              <div class="probootstrap-counter-wrap">
+                <div class="probootstrap-icon">
+                  <i class="icon-users2"></i>
+                </div>
+                <div class="probootstrap-text">
+                  <span class="probootstrap-counter">
+                    <span class="js-counter" data-from="0" data-to="20203" data-speed="5000" data-refresh-interval="50">1</span>
+                  </span>
+                  <span class="probootstrap-counter-label">Students Enrolled</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+              <div class="probootstrap-counter-wrap">
+                <div class="probootstrap-icon">
+                  <i class="icon-user-tie"></i>
+                </div>
+                <div class="probootstrap-text">
+                  <span class="probootstrap-counter">
+                    <span class="js-counter" data-from="0" data-to="139" data-speed="5000" data-refresh-interval="50">1</span>
+                  </span>
+                  <span class="probootstrap-counter-label">Certified Teachers</span>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+              <div class="probootstrap-counter-wrap">
+                <div class="probootstrap-icon">
+                  <i class="icon-library"></i>
+                </div>
+                <div class="probootstrap-text">
+                  <span class="probootstrap-counter">
+                    <span class="js-counter" data-from="0" data-to="99" data-speed="5000" data-refresh-interval="50">1</span>%
+                  </span>
+                  <span class="probootstrap-counter-label">Passing to Universities</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+               
+               <div class="probootstrap-counter-wrap">
+                <div class="probootstrap-icon">
+                  <i class="icon-smile2"></i>
+                </div>
+                <div class="probootstrap-text">
+                  <span class="probootstrap-counter">
+                    <span class="js-counter" data-from="0" data-to="100" data-speed="5000" data-refresh-interval="50">1</span>%
+                  </span>
+                  <span class="probootstrap-counter-label">Parents Satisfaction</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+
+      <section class="probootstrap-section probootstrap-bg-white probootstrap-border-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+              <h2>Our Featured Courses</h2>
+              <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
+            </div>
+          </div>
+          <!-- END row -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="probootstrap-service-2 probootstrap-animate">
+                <div class="image">
+                  <div class="image-bg">
+                    <img src="{% static 'img/comp.jpg' %}" alt="Free Bootstrap Template by uicookies.com">
+                  </div>
+                </div>
+                <div class="text">
+                  <span class="probootstrap-meta"><i class="icon-calendar2"></i> July 10, 2017</span>
+                  <h3>B.E. Computer Engineering</h3>
+                  <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
+                  <p><a href="#" class="btn btn-primary">Enroll now</a> <span class="enrolled-count">2,928 students enrolled</span></p>
+                </div>
+              </div>
+
+              <div class="probootstrap-service-2 probootstrap-animate">
+                <div class="image">
+                  <div class="image-bg">
+                    <img src="{% static 'img/mech.jpg' %}" alt="Free Bootstrap Template by uicookies.com">
+                  </div>
+                </div>
+                <div class="text">
+                  <span class="probootstrap-meta"><i class="icon-calendar2"></i> July 10, 2017</span>
+                  <h3>B.E. Electronics and Telecommunications</h3>
+                  <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
+                  <p><a href="#" class="btn btn-primary">Enroll now</a> <span class="enrolled-count">7,202 students enrolled</span></p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <div class="probootstrap-service-2 probootstrap-animate">
+                <div class="image">
+                  <div class="image-bg">
+                    <img src="{% static 'img/extc.jpg' %}" alt="Free Bootstrap Template by uicookies.com">
+                  </div>
+                </div>
+                <div class="text">
+                  <span class="probootstrap-meta"><i class="icon-calendar2"></i> July 10, 2017</span>
+                  <h3>B.E. Mechanical Engineering</h3>
+                  <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
+                  <p><a href="#" class="btn btn-primary">Enroll now</a> <span class="enrolled-count">12,582 students enrolled</span></p>
+                </div>
+              </div>
+
+              <div class="probootstrap-service-2 probootstrap-animate">
+                <div class="image">
+                  <div class="image-bg">
+                    <img src="{% static 'img/inst.jpg' %}" alt="Free Bootstrap Template by uicookies.com">
+                  </div>
+                </div>
+                <div class="text">
+                  <span class="probootstrap-meta"><i class="icon-calendar2"></i> July 10, 2017</span>
+                  <h3>B.E. Instrumentation</h3>
+                  <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam quos quis nisi voluptatum architecto rerum error.</p>
+                  <p><a href="#" class="btn btn-primary">Enroll now</a> <span class="enrolled-count">9,582 students enrolled</span></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      
+      <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+              <h2>Meet Our Qualified Teachers</h2>
+              <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
+            </div>
+          </div>
+          <!-- END row -->
+
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="probootstrap-teacher text-center probootstrap-animate">
+                <figure class="media">
+                  <img src="{% static 'img/khch.webp' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                </figure>
+                <div class="text">
+                  <h3>Prof. Sunil Khachane</h3>
+                  <p>Head of Department and Asst.Professor in Computer Engineering Department..</p>
+                  <ul class="probootstrap-footer-social">
+                    <li class="twitter"><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li class="facebook"><a href="#"><i class="icon-facebook2"></i></a></li>
+                    <li class="instagram"><a href="#"><i class="icon-instagram2"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="icon-google-plus"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="probootstrap-teacher text-center probootstrap-animate">
+                <figure class="media">
+                  <img src="{% static 'img/ket_sir.webp' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                </figure>
+                <div class="text">
+                  <h3>Dr. Satish Y. Ket</h3>
+                  <p>Professor, Computer Engineering Department</p>
+                  <ul class="probootstrap-footer-social">
+                    <li class="twitter"><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li class="facebook"><a href="#"><i class="icon-facebook2"></i></a></li>
+                    <li class="instagram"><a href="#"><i class="icon-instagram2"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="icon-google-plus"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+            <div class="col-md-3 col-sm-6">
+              <div class="probootstrap-teacher text-center probootstrap-animate">
+                <figure class="media">
+                  <img src="{% static 'img/dalgade_sir.webp' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                </figure>
+                <div class="text">
+                  <h3>Prof. Dilip Dalgade</h3>
+                  <p>Professor, Computer Engineering Department</p>
+                  <ul class="probootstrap-footer-social">
+                    <li class="twitter"><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li class="facebook"><a href="#"><i class="icon-facebook2"></i></a></li>
+                    <li class="instagram"><a href="#"><i class="icon-instagram2"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="icon-google-plus"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="probootstrap-teacher text-center probootstrap-animate">
+                <figure class="media">
+                  <img src="{% static 'img/panchal_sir.webp' %}" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                </figure>
+                <div class="text">
+                  <h3>Prof. Bhavesh Panchal</h3>
+                  <p>Professor, Computer Engineering Department</p>
+                  <ul class="probootstrap-footer-social">
+                    <li class="twitter"><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li class="facebook"><a href="#"><i class="icon-facebook2"></i></a></li>
+                    <li class="instagram"><a href="#"><i class="icon-instagram2"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="icon-google-plus"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+     
+      <section class="probootstrap-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
+              <h2>Why Choose RGIT?</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>Well Qualified Teachers!</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                </div>  
+              </div>
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>Highly Maintained Classrooms.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                </div>
+              </div>
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>Specialized Practical Labs!</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>Specialized Practical Labs!</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                </div>  
+              </div>
+              
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>Well Qualified Teachers!</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                </div>
+              </div>
+              
+              <div class="service left-icon probootstrap-animate">
+                <div class="icon"><i class="icon-checkmark"></i></div>
+                <div class="text">
+                  <h3>Highly Maintained Classrooms.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- END row -->
+        </div>
+      </section>
+      
+      <section class="probootstrap-cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Get your admission now!</h2>
+              <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="probootstrap-footer probootstrap-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>About RGIT</h3>
+                <p>RGIT provides a very enriching and rewarding experience to all students. Routine of students includes an optimal mix of work, play and leisure. Curriculum and pedagogy have been designed in a way to make the teaching-learning process both interesting and challenging. Project based learning, problem based</p>
+                <h3>Social</h3>
+                <ul class="probootstrap-footer-social">
+                  <li><a href="#"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#"><i class="icon-github"></i></a></li>
+                  <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                  <li><a href="#"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+              <div class="probootstrap-footer-widget">
+                <h3>Links</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#">Teachers</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Contact Info</h3>
+                <ul class="probootstrap-contact-info">
+                  <li><i class="icon-location2"></i> <span>Versova, Andheri West, Mumbai-400053</span></li>
+                  <li><i class="icon-mail"></i><span>info@mctrgit.ac.in</span></li>
+                  <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+          <!-- END row -->
+          
+        </div>
+
+        <div class="probootstrap-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 text-left">
+                <p>&copy; 2021 <a href="https://uicookies.com/"></a>. All Rights Reserved.</a></p>
+              </div>
+              <div class="col-md-4 probootstrap-back-to-top">
+                <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- END wrapper -->
+    
+
+    <script src="{% static 'js/scripts.min.js' %}"></script>
+    <script src="{% static 'js/main.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+  </body>
+</html>

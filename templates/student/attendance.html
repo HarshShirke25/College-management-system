@@ -1,0 +1,136 @@
+<!DOCKTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #7c7e79, #2c5182);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #55608f;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;color:deeppink;"> Attendance System </h1>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>GR No.</th>
+                    <th>Course ID</th>
+                    <th>Course name</th>
+                    <th>Attended Classes</th>
+                    <th>Total classes</th>
+                    <th>Attendance %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>190101107</td>
+                    <td>CSC501</td>
+                    <td>Theoretical Computer Science</td>
+                    <td>15</td>
+                    <td>18</td>
+                    <td>83.33</td>
+                </tr>
+                <tr>
+                    <td>190101108</td>
+                    <td>CSC502</td>
+                    <td>Software Engineering</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>94.11</td>
+                </tr>
+                <tr>
+                    <td>190101111</td>
+                    <td>CSC503</td>
+                    <td>Computer Network</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>190101127</td>
+                    <td>CSC504</td>
+                    <td>Data Warehousing & Mining</td>
+                    <td>14</td>
+                    <td>18</td>
+                    <td>77.78</td>
+                </tr>
+                <tr>
+                    <td>190101130</td>
+                    <td>DOC505</td>
+                    <td>Advanced Database Management System</td>
+                    <td>12</td>
+                    <td>15</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
