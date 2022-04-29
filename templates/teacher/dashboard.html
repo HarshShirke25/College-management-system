@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Student Dashboard
+    Teacher Dashboard
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -41,15 +41,15 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="{% url 'profile' %}">
+            <a class="nav-link" href="{% url 'teacherprofile' %}">
               <i class="material-icons">person</i>
-              <p>User Profile</p>
+              <p>Teacher Profile</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./tables.html">
+            <a class="nav-link" href="{% url 'stdattendance' %}">
               <i class="material-icons">content_paste</i>
-              <p>Assigned tasks</p>
+              <p>Student Attendance</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -59,7 +59,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./icons.html">
+            <a class="nav-link" href="{% url 'teachertt' %}">
               <i class="material-icons">bubble_chart</i>
               <p>Lecture Schedule</p>
             </a>
@@ -127,11 +127,11 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
-                  <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                  <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-                  <a class="dropdown-item" href="#">Another Notification</a>
-                  <a class="dropdown-item" href="#">Another One</a>
+                  <a class="dropdown-item" href="#">You have Mini Project Review Tomorrow</a>
+                  <a class="dropdown-item" href="#">Your salary has been credited</a>
+                  <a class="dropdown-item" href="#"> Midterm2 Timetable is displayed on the E-Notice Board</a>
+                  <a class="dropdown-item" href="#">CSS Lecture has been Scheduled</a>
+                  
                 </div>
               </li>
               <li class="nav-item dropdown">

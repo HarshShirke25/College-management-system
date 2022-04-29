@@ -19,7 +19,7 @@ def login(request):
                 if have_group(user,"STUDENT"):
                     auth.login(request,user)
                     return redirect('dashboard_std')
-                elif have_group(user,"USER"):
+                elif have_group(user,"TEACHER"):
                     auth.login(request,user)
                     return redirect('dashboard_tch')
         else:
